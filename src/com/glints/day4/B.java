@@ -6,5 +6,7 @@ public class B extends Parent {
 	public static void main(String[] args) {
 		B obj = new B();
 		obj.msg();
+		Person p = new Person();
+		p.test();
 	}
 }

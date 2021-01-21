@@ -24,5 +24,9 @@ public class Person {
 
 		}
 	}
+	
+	protected void test() {
+		System.out.println("test");
+	}
 
 }
