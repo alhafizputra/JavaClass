@@ -18,3 +18,18 @@ Day 3
 Day 4
 - Encapsulation
 - Access Specifiers
+
+Day 5
+- String
+- StringBuffer
+- Immutability String
+
+Day 6
+- Single Dimensional Array
+- Multi Dimensional Array
+- Sorting
+
+Day 7
+- List
+- Set
+- Map
