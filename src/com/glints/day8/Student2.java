@@ -11,7 +11,7 @@ public class Student2 {
 		this.name = name;
 		this.age = age;
 		this.percent = percent;
-		this.isLocal = isLocal;
+		this.isLocal = isLocal; 
 	}
 
 	public void displayDetails() {
