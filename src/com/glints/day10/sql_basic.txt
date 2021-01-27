@@ -1,0 +1,57 @@
+--CREATE
+--create table Customer(
+--	CustomerID	int	not null,
+--	CustomerName varchar(255),
+--	ContactName	varchar(255),
+--	Address	varchar(255),
+--	City varchar(255),
+--	PostalCode varchar(255),
+--	Country varchar(255)
+--)
+
+--SELECT
+select * from customer ;
+select * from customer where postalcode = '4006';
+select * from customer where postalcode IN ('4006', '21240');
+
+--LIKE
+select * from customer where address like '%Turin%';
+
+--INSERT
+INSERT into customer (CustomerID, CustomerName, ContactName, Address, City, PostalCode, Country)
+values (1, 'Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
+INSERT into customer (CustomerID, CustomerName, ContactName, Address, City, PostalCode, Country)
+values (2, 'Wolski', 'Zbyszek', 'ul. Filtrowa 68', 'Walla', '01-012', 'Poland');
+INSERT into customer (CustomerID, CustomerName, ContactName, Address, City, PostalCode, Country)
+values (3, 'Wilman', 'Matti', 'Keskuskatu 45', 'Helsinki', '21240', 'Finland');
+INSERT into customer (CustomerID, CustomerName, ContactName, Address, City, PostalCode, Country)
+values (4, 'Ronaldo', 'Cristiano', 'Turin 30', 'Turin', '12459', 'Germany');
+
+--UPDATE
+update customer set country = 'Germany' where customername = 'Wilman';
+update customer set money = 3000 where customerid = 2;
+update customer set money = 5000 where customerid = 3;
+update customer set money = 50000 where customerid = 4;
+update customer set money = 200 where customerid = 1;
+
+--DISTINCT
+select distinct(country) from customer; 
+
+--ALTER
+alter table customer add size int;
+alter table customer drop size;
+alter table customer add money int;
+
+--MAX
+select max(money) from customer;
+
+--MIN
+select min(money) from customer;
+
+--COUNT
+select count(*) from customer;
+
+--ORDER BY
+select * from customer order by money desc limit 1;
+select * from customer order by money desc;
+
